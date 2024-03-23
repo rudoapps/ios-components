@@ -3,22 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1ADE7CC2BAE113F000CD573 /* demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADE7CB2BAE113F000CD573 /* demoApp.swift */; };
-		C1ADE7CE2BAE113F000CD573 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADE7CD2BAE113F000CD573 /* ContentView.swift */; };
-		C1ADE7D02BAE1140000CD573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADE7CF2BAE1140000CD573 /* Assets.xcassets */; };
-		C1ADE7D32BAE1140000CD573 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADE7D22BAE1140000CD573 /* Preview Assets.xcassets */; };
+		C1ADE7E02BAE1261000CD573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADE7DB2BAE1261000CD573 /* Assets.xcassets */; };
+		C1ADE7E12BAE1261000CD573 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1ADE7DD2BAE1261000CD573 /* Preview Assets.xcassets */; };
+		C1ADE7E22BAE1261000CD573 /* demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADE7DE2BAE1261000CD573 /* demoApp.swift */; };
+		C1ADE7E32BAE1261000CD573 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ADE7DF2BAE1261000CD573 /* ContentView.swift */; };
+		C1ADE7E62BAE1272000CD573 /* ios-components in Frameworks */ = {isa = PBXBuildFile; productRef = C1ADE7E52BAE1272000CD573 /* ios-components */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1ADE7C82BAE113F000CD573 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1ADE7CB2BAE113F000CD573 /* demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoApp.swift; sourceTree = "<group>"; };
-		C1ADE7CD2BAE113F000CD573 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C1ADE7CF2BAE1140000CD573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1ADE7D22BAE1140000CD573 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1ADE7DB2BAE1261000CD573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1ADE7DD2BAE1261000CD573 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1ADE7DE2BAE1261000CD573 /* demoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = demoApp.swift; sourceTree = "<group>"; };
+		C1ADE7DF2BAE1261000CD573 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1ADE7E62BAE1272000CD573 /* ios-components in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +37,7 @@
 		C1ADE7BF2BAE113F000CD573 = {
 			isa = PBXGroup;
 			children = (
-				C1ADE7CA2BAE113F000CD573 /* demo */,
+				C1ADE7DA2BAE1261000CD573 /* demo */,
 				C1ADE7C92BAE113F000CD573 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,21 +50,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1ADE7CA2BAE113F000CD573 /* demo */ = {
+		C1ADE7DA2BAE1261000CD573 /* demo */ = {
 			isa = PBXGroup;
 			children = (
-				C1ADE7CB2BAE113F000CD573 /* demoApp.swift */,
-				C1ADE7CD2BAE113F000CD573 /* ContentView.swift */,
-				C1ADE7CF2BAE1140000CD573 /* Assets.xcassets */,
-				C1ADE7D12BAE1140000CD573 /* Preview Content */,
+				C1ADE7DB2BAE1261000CD573 /* Assets.xcassets */,
+				C1ADE7DC2BAE1261000CD573 /* Preview Content */,
+				C1ADE7DE2BAE1261000CD573 /* demoApp.swift */,
+				C1ADE7DF2BAE1261000CD573 /* ContentView.swift */,
 			);
 			path = demo;
 			sourceTree = "<group>";
 		};
-		C1ADE7D12BAE1140000CD573 /* Preview Content */ = {
+		C1ADE7DC2BAE1261000CD573 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C1ADE7D22BAE1140000CD573 /* Preview Assets.xcassets */,
+				C1ADE7DD2BAE1261000CD573 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = demo;
+			packageProductDependencies = (
+				C1ADE7E52BAE1272000CD573 /* ios-components */,
+			);
 			productName = demo;
 			productReference = C1ADE7C82BAE113F000CD573 /* demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C1ADE7BF2BAE113F000CD573;
+			packageReferences = (
+				C1ADE7E42BAE1272000CD573 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = C1ADE7C92BAE113F000CD573 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1ADE7D32BAE1140000CD573 /* Preview Assets.xcassets in Resources */,
-				C1ADE7D02BAE1140000CD573 /* Assets.xcassets in Resources */,
+				C1ADE7E12BAE1261000CD573 /* Preview Assets.xcassets in Resources */,
+				C1ADE7E02BAE1261000CD573 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1ADE7CE2BAE113F000CD573 /* ContentView.swift in Sources */,
-				C1ADE7CC2BAE113F000CD573 /* demoApp.swift in Sources */,
+				C1ADE7E32BAE1261000CD573 /* ContentView.swift in Sources */,
+				C1ADE7E22BAE1261000CD573 /* demoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +352,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C1ADE7E42BAE1272000CD573 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C1ADE7E52BAE1272000CD573 /* ios-components */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "ios-components";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C1ADE7C02BAE113F000CD573 /* Project object */;
 }
