@@ -12,23 +12,26 @@ The `CustomButton` is a customizable button that allows you to easily adapt its 
 
 ```swift
 import SwiftUI
-import RudoAppsSwiftUI
+import ios_components
 
 struct ContentView: View {
+    var buttonStyle = CustomButtonStyle(backgroundColor: .red,
+                                        foregroundColor: .black,
+                                        borderColor: .blue,
+                                        mode: .text,
+                                        text: "Presiona",
+                                        isFullWidth: true,
+                                        isDisabled: false) {
+
+    }
     var body: some View {
-        CustomButton(action: {
-            // Action when button is pressed
-            print("Button pressed")
-        }) {
-            Text("Press")
-                .font(.headline)
-                .foregroundColor(.white)
-                .padding()
-                .background(Color.blue)
-                .cornerRadius(10)
+        VStack {            
+            CustomButton(style: buttonStyle)
         }
+        .padding()
     }
 }
+
 ```
 
 ## Installation
