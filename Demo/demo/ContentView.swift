@@ -6,14 +6,19 @@
 //
 
 import SwiftUI
+import ios_components
 
 struct ContentView: View {
+    var buttonStyle = CustomButtonStyle(backgroundColor: .red, foregroundColor: .black, borderColor: .blue, mode: .text, text: "Presiona", isFullWidth: true, isDisabled: false) {
+
+    }
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            CustomButton(style: buttonStyle)
         }
         .padding()
     }
