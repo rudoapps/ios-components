@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Fernando Salom Carratala on 23/3/24.
 //
@@ -8,38 +8,50 @@
 import Foundation
 import SwiftUI
 
-public enum CustomButtonMode {
-    case text
-    case icon
-    case textAndIcon
-    case iconAndText
-}
-
 public class CustomButtonStyle: ObservableObject {
+    public enum Mode {
+        case text
+        case icon
+        case textAndIcon
+        case iconAndText
+    }
+
+    public enum Border {
+        case square
+        case rounded
+        case custom(CGFloat)
+
+        var radius: CGFloat {
+            switch self {
+            case .square:
+                return 0
+            case .rounded:
+                return 20
+            case .custom(let cGFloat):
+                return cGFloat
+            }
+        }
+    }
+
     var backgroundColor: Color
     var foregroundColor: Color
     var borderColor: Color
-    var mode: CustomButtonMode
-    var text: String
+    var mode: CustomButtonStyle.Mode
+    var type: CustomButtonStyle.Border
     var isFullWidth: Bool
-    var isDisabled: Bool
-    var completion: (() -> Void)?
 
     public init(backgroundColor: Color,
-         foregroundColor: Color,
-         borderColor: Color,
-         mode: CustomButtonMode = .text,
-         text: String,
-         isFullWidth: Bool,
-         isDisabled: Bool,
-         completion: (() -> Void)?) {
+                foregroundColor: Color,
+                borderColor: Color,
+                mode: CustomButtonStyle.Mode = .text,
+                type: CustomButtonStyle.Border = .rounded,
+                isFullWidth: Bool) {
         self.backgroundColor = backgroundColor
         self.foregroundColor = foregroundColor
+        self.borderColor = borderColor
         self.mode = mode
-        self.text = text
+        self.type = type
         self.borderColor = borderColor
         self.isFullWidth = isFullWidth
-        self.isDisabled = isDisabled
-        self.completion = completion
     }
 }

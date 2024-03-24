@@ -9,18 +9,26 @@ import SwiftUI
 import ios_components
 
 struct ContentView: View {
-    var buttonStyle = CustomButtonStyle(backgroundColor: .red,
-                                        foregroundColor: .black,
-                                        borderColor: .blue,
-                                        mode: .text,
-                                        text: "Presiona",
-                                        isFullWidth: true,
-                                        isDisabled: false) {
+    let buttonStyle = CustomButtonStyle(
+        backgroundColor: .red,
+        foregroundColor: .blue,
+        borderColor: .green,
+        mode: .text,
+        type: .square,
+        isFullWidth: true)
 
-    }
     var body: some View {
-        VStack {            
-            CustomButton(style: buttonStyle)
+        VStack {
+            CustomButton("presioname", style: buttonStyle) {
+
+            }
+            Button {
+
+            } label: {
+                Text("Test")
+            }
+            .buttonStyle(FlatButtonStyle())
+
         }
         .padding()
     }
